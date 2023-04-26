@@ -17,17 +17,27 @@
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Sejam bem-vindo(a) novamente. Faca login para acessar sua conta e poder fazer as configuracoes no seu ambiente</p>
-                <form action="login.php" method="post">     
+                <p>Sejam bem-vindo(a) novamente. Faca login para acessar sua conta e poder fazer as configuracoes no seu ambiente.</p>
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">transcribe</span>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key_alert</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8">
+                        <label for="isenha">Senha</label>
+                    </div> 
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a senha <span class="material-symbols-outlined">
+                            mail
+                            </span>
+                    </a>    
                 </form>
-                <span class="material-symbols-outlined">transcribe
-                <input type="text" value="seu e-mail"></span>
-
-                <span class="material-symbols-outlined">vpn_key_alert
-                <input type="text" value="sua senha"></span>
-
-                <input type="text" value="Entrar">
-                <input type="text" value="Esqueci a senha">
+                
+            
             </div>
 
         </section>
